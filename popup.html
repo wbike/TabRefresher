@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tab Refresher</title>
+    <style>
+        body {
+            font-family: 'Aptos', sans-serif;
+            text-align: center;
+            margin: 10px;
+        }
+
+        #toggleButton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        #toggleButton.off {
+            background-color: #f44336;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Tab Refresher</h3>
+    <div>
+        <span>Current Interval: </span><span id="currentInterval">Not Set</span>
+    </div>
+    <input type="text" id="interval" placeholder="Interval or range in seconds (e.g., 5 or 5-10)">
+    <button id="toggleButton" class="off">Start</button>
+    <script src="popup.js"></script>
+</body>
+</html>
